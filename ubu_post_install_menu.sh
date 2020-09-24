@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# script by Michael Fryman based on work by github user waleedahmad
+# original github source: https://gist.github.com/waleedahmad/e65afec97538a158eaeeffd79043eb2c
+# but much was added now to configure Ubuntu with various settings, packages, etc.
+# to improve things quite a bit
+#
+# This is intended for VM (virtual machine) installations of Ubuntu
+# tested on Ubuntu 20.04 installed as guest VM on VMware Workstation
+
 if [[ $EUID -ne 0 ]]; then
 
   echo "This script must be run as root"

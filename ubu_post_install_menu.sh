@@ -48,8 +48,7 @@ else
     25 "Open JDK 11" off
     26 "Open JDK 13" off
     27 "Open JDK 14" off
-    28 "Oracle's JAVA JDK 8" off
-    99 "Last" off)
+    28 "Oracle's JAVA JDK 8" off)
   choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
   clear
@@ -258,11 +257,6 @@ else
           add-apt-repository ppa:webupd8team/java -y
           apt update
           apt install oracle-java8-installer -y
-          ;;
-        99)
-          # Last
-          #echo "xxxx"
-          #apt install -y xxxx
           ;;
     esac
   done
